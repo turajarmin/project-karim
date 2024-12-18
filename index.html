@@ -16,10 +16,29 @@
                     <div><a href="#">about</a></div>
                     <div><a href="#">conact</a></div>
                     <div><a href="#">gallery</a></div>
+                    <button class="close">&times;</button>
                   </nav>
+                </div>
+                <div class="hamburger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
                <!-- #endregion -->
             </div>
            <!-- #endregion -->
+           <script>
+                  let hamburger=document.querySelector(".hamburger")
+                  let menu=document.querySelector(".menu")
+                  let closeBtn=document.querySelector(".close")
+                  
+                  hamburger.addEventListener("click",function(){
+                    menu.style.left="0"
+                  })
+                  closeBtn.addEventListener("click",function(){
+                    menu.style.left="-100%"
+                  })
+                  
+           </script>
   </body>        
 </html>
